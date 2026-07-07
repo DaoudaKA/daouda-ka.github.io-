@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daouda KA — Data Engineer &amp; Analyst</title>
+<meta name="description" content="Daouda KA — Data Engineer / Data Analyst basé à Dakar. Pipelines ELT, dbt, Snowflake, Big Data, Power BI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">daouda<span class="logo-accent">.ka()</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">à propos</a>
+      <a href="#experience" class="nav-link">expérience</a>
+      <a href="#projects" class="nav-link">projets</a>
+      <a href="#skills" class="nav-link">compétences</a>
+      <a href="#contact" class="nav-link">contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-sm btn-outline">Me contacter</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-text reveal">
+        <p class="eyebrow">// data engineer &amp; analyst — dakar, sénégal</p>
+        <h1 class="hero-title">Daouda <span class="text-azure">KA</span></h1>
+        <p class="hero-sub">Je transforme des données brutes en systèmes décisionnels fiables.</p>
+        <p class="hero-desc">
+          Ingénieur data basé à Dakar, spécialisé dans la conception de pipelines
+          modernes — ingestion, transformation gouvernée avec <strong>dbt</strong>,
+          orchestration — et la restitution business avec <strong>Power BI</strong>
+          et <strong>Looker Studio</strong>. De la donnée brute jusqu'au tableau
+          de bord qui aide vraiment à décider.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="assets/CV-Daouda-KA.pdf" class="btn btn-outline" download>Télécharger le CV</a>
+        </div>
+
+        <dl class="hero-stats">
+          <div class="stat">
+            <dt>Expérience</dt>
+            <dd>15+ mois</dd>
+          </div>
+          <div class="stat">
+            <dt>Projets data</dt>
+            <dd>10+</dd>
+          </div>
+          <div class="stat">
+            <dt>Langues</dt>
+            <dd>4</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">daouda_ka.sql</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <p><span class="prompt">$</span> <span id="typedCmd"></span><span class="cursor" id="cursor">▌</span></p>
+            <div id="terminalOutput" class="terminal-output"></div>
+          </div>
+        </div>
+
+        <div class="pipeline" role="img" aria-label="Pipeline de données : brut vers décision">
+          <div class="pipe-node" data-stage="RAW"><span>RAW</span></div>
+          <div class="pipe-line"></div>
+          <div class="pipe-node" data-stage="STAGING"><span>STAGING</span></div>
+          <div class="pipe-line"></div>
+          <div class="pipe-node" data-stage="MARTS"><span>MARTS</span></div>
+          <div class="pipe-line"></div>
+          <div class="pipe-node pipe-node-accent" data-stage="DÉCISION"><span>DÉCISION</span></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="scroll-hint reveal"><span></span>défiler</div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="eyebrow reveal">// à propos</p>
+      <h2 class="section-title reveal">De la donnée brute à la décision</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Diplômé d'un Master 2 en Business Intelligence à l'UCAD (Faculté
+            des Sciences et Techniques), je conçois des plateformes de données
+            modernes fondées sur des approches <strong>ELT</strong> et
+            <strong>Data Mesh</strong>. J'aime particulièrement industrialiser
+            des transformations avec <strong>dbt</strong> — modèles, tests,
+            documentation — et orchestrer des pipelines fiables plutôt que des
+            scripts isolés.
+          </p>
+          <p>
+            À la croisée de l'ingénierie data, du développement et de
+            l'analyse métier, je construis des écosystèmes décisionnels
+            complets : de l'ingestion brute jusqu'au dashboard que les
+            équipes utilisent réellement pour décider. Rigoureux, autonome,
+            et curieux des détails qui font la différence entre un pipeline
+            qui tourne et un pipeline fiable.
+          </p>
+
+          <ul class="lang-list">
+            <li><span>Français</span><em>Courant</em></li>
+            <li><span>Anglais</span><em>Intermédiaire</em></li>
+            <li><span>Wolof</span><em>Courant</em></li>
+            <li><span>Pular</span><em>Courant</em></li>
+          </ul>
+        </div>
+
+        <div class="stack-card reveal">
+          <p class="stack-card-label">// modern data stack</p>
+          <div class="stack-group">
+            <h3>Data Engineering</h3>
+            <div class="chips">
+              <span class="chip">ELT</span>
+              <span class="chip">dbt</span>
+              <span class="chip">Dagster</span>
+              <span class="chip">Data Quality</span>
+              <span class="chip">Snowflake</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h3>Cloud &amp; Infra</h3>
+            <div class="chips">
+              <span class="chip">GCP</span>
+              <span class="chip">Azure</span>
+              <span class="chip">Docker</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h3>Langages</h3>
+            <div class="chips">
+              <span class="chip">SQL</span>
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">PHP</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <h3>BI &amp; Reporting</h3>
+            <div class="chips">
+              <span class="chip">Power BI</span>
+              <span class="chip">Looker Studio</span>
+              <span class="chip">Streamlit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section-dark" id="experience">
+    <div class="section-inner">
+      <p class="eyebrow reveal">// expérience</p>
+      <h2 class="section-title reveal">Parcours professionnel</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date"><span>2025 — 2026</span></div>
+          <div class="timeline-content">
+            <h3>Data &amp; Développement <em>· ByFilling, Dakar</em></h3>
+            <p class="timeline-role">Stagiaire — Avril 2025 à Mai 2026</p>
+            <ul>
+              <li>Conception et amélioration de pipelines ELT pour automatiser collecte, nettoyage et transformation des données.</li>
+              <li>NLP : analyse de sentiment et préparation de données textuelles pour des modèles ML.</li>
+              <li>Conception et intégration d'un chatbot intelligent pour automatiser les réponses clients.</li>
+              <li>Production de rapports mensuels et de dashboards stratégiques (Power BI, Looker Studio).</li>
+              <li>Automatisation de workflows via Webhooks, Zapier et outils no-code.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date"><span>2025</span></div>
+          <div class="timeline-content">
+            <h3>Développeur Web <em>· Jant Tech</em></h3>
+            <p class="timeline-role">Février — Mars 2025</p>
+            <ul>
+              <li>Développement fullstack : fonctionnalités front-end (Angular) et back-end (PHP).</li>
+              <li>Maintenance corrective et optimisation de performance de plateformes web existantes.</li>
+              <li>Support technique et intégration de services tiers.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date"><span>2022 — auj.</span></div>
+          <div class="timeline-content">
+            <h3>Engagement associatif &amp; leadership</h3>
+            <ul>
+              <li>Président de l'Amicale des Élèves et Étudiants de Khondio, depuis 2022.</li>
+              <li>Secrétaire Général de la Fédération des Amicales de la commune de Darou Khoudoss (6 amicales), depuis 2022.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow reveal">// projets</p>
+      <h2 class="section-title reveal">Des pipelines qui tournent, pas des démos</h2>
+      <p class="section-lead reveal">Une sélection de projets construits pour comprendre — et non seulement utiliser — les outils de la donnée moderne.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card project-flagship reveal">
+          <div class="project-top">
+            <span class="project-flag">Projet phare</span>
+            <div class="project-tags">
+              <span class="chip chip-outline">Snowflake</span>
+              <span class="chip chip-outline">dbt</span>
+              <span class="chip chip-outline">Power BI</span>
+            </div>
+          </div>
+          <h3>Pipeline E-commerce — Snowflake × dbt</h3>
+          <p>
+            Architecture medallion complète (RAW → STAGING → INTERMEDIATE →
+            MARTS), 22 tests de qualité automatisés, ingestion via Snowpipe,
+            détection incrémentale des changements via Streams &amp; Tasks,
+            documentation générée automatiquement et dashboard Power BI
+            interactif.
+          </p>
+          <a href="https://github.com/DaoudaKA/pipeline-ecommerce-flocon-dbt" class="project-link" target="_blank" rel="noopener">
+            Voir le code <span>→</span>
+          </a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="chip chip-outline">Hadoop</span>
+              <span class="chip chip-outline">Spark</span>
+              <span class="chip chip-outline">Kafka</span>
+            </div>
+          </div>
+          <h3>Détection de fraude — Big Data</h3>
+          <p>
+            Pipeline complet d'analyse de données financières : ingestion
+            HDFS, modèle Spark MLlib (AUC 0.9838), streaming Kafka,
+            orchestration Airflow et dashboarding Superset, entièrement
+            conteneurisé.
+          </p>
+          <a href="https://github.com/DaoudaKA/hadoop-spark-docker" class="project-link" target="_blank" rel="noopener">
+            Voir le code <span>→</span>
+          </a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="chip chip-outline">Dagster</span>
+              <span class="chip chip-outline">dbt</span>
+              <span class="chip chip-outline">Data Mesh</span>
+            </div>
+          </div>
+          <h3>Modern Data Platform</h3>
+          <p>
+            Mémoire de Master 2 : architecture Data Lakehouse &amp; Data
+            Mesh, pipelines ELT industrialisés avec dbt, orchestration
+            Dagster et déploiement continu via GitHub Actions.
+          </p>
+          <a href="https://github.com/DaoudaKA?tab=repositories" class="project-link" target="_blank" rel="noopener">
+            Voir le code <span>→</span>
+          </a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="chip chip-outline">Docker</span>
+              <span class="chip chip-outline">Big Data</span>
+            </div>
+          </div>
+          <h3>Cluster Big Data autonome</h3>
+          <p>
+            Cluster Big Data entièrement conteneurisé avec Docker Compose,
+            conçu pour être appris, démontré et réutilisé comme socle dans
+            n'importe quel projet d'ingénierie de données.
+          </p>
+          <a href="https://github.com/DaoudaKA/Cluster-Big-Data" class="project-link" target="_blank" rel="noopener">
+            Voir le code <span>→</span>
+          </a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="chip chip-outline">Python</span>
+              <span class="chip chip-outline">Temps réel</span>
+            </div>
+          </div>
+          <h3>PolluTrack</h3>
+          <p>
+            Pipeline de monitoring environnemental avec reporting en temps
+            réel — de la collecte d'indicateurs à leur restitution
+            exploitable.
+          </p>
+          <a href="https://github.com/DaoudaKA/PolluTrack" class="project-link" target="_blank" rel="noopener">
+            Voir le code <span>→</span>
+          </a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="chip chip-outline">NLP</span>
+              <span class="chip chip-outline">Power BI</span>
+            </div>
+          </div>
+          <h3>NLP &amp; Business Intelligence</h3>
+          <p>
+            Analyse de sentiment sur données textuelles, intégrée dans des
+            dashboards BI pour affiner la lecture de la performance et de la
+            stratégie marketing.
+          </p>
+          <a href="https://github.com/DaoudaKA/NLP-et-BI" class="project-link" target="_blank" rel="noopener">
+            Voir le code <span>→</span>
+          </a>
+        </article>
+
+      </div>
+
+      <div class="project-more reveal">
+        <a href="https://github.com/DaoudaKA?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+          Tous les projets sur GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-dark" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow reveal">// compétences</p>
+      <h2 class="section-title reveal">Boîte à outils</h2>
+
+      <div class="skills-grid">
+        <div class="skill-block reveal">
+          <h3>Data Engineering</h3>
+          <p>ELT, Data Pipelines, Data Warehousing, Data Quality, modélisation analytique, approche Data Mesh.</p>
+        </div>
+        <div class="skill-block reveal">
+          <h3>Modern Data Stack</h3>
+          <p>dbt (modèles, tests, documentation), Dagster (assets, jobs, schedules), Snowflake.</p>
+        </div>
+        <div class="skill-block reveal">
+          <h3>CI/CD &amp; Versioning</h3>
+          <p>Git, GitHub, GitHub Actions, bonnes pratiques DevOps.</p>
+        </div>
+        <div class="skill-block reveal">
+          <h3>Bases de données</h3>
+          <p>SQL avancé, PostgreSQL, MySQL, SQL Server, BigQuery, MongoDB.</p>
+        </div>
+        <div class="skill-block reveal">
+          <h3>Programmation</h3>
+          <p>Python (Pandas, NumPy), APIs, JavaScript, PHP, CMS WordPress.</p>
+        </div>
+        <div class="skill-block reveal">
+          <h3>BI, Reporting &amp; Data Apps</h3>
+          <p>Power BI, Looker Studio, Streamlit, dashboards interactifs, reporting automatisé.</p>
+        </div>
+      </div>
+
+      <div class="edu-cert-grid">
+        <div class="edu-block reveal">
+          <p class="stack-card-label">// formation</p>
+          <ul class="edu-list">
+            <li><span>2025 — 2026</span>Master 2 Informatique, Business Intelligence — UCAD</li>
+            <li><span>2024</span>Master 1 Systèmes d'Information Répartis — UCAD</li>
+            <li><span>2023</span>Licence Professionnelle, Génie Logiciel — UCAD</li>
+            <li><span>2020</span>Baccalauréat Scientifique S2</li>
+          </ul>
+        </div>
+        <div class="cert-block reveal">
+          <p class="stack-card-label">// certifications</p>
+          <div class="chips">
+            <span class="chip">Data Analysis — Force N</span>
+            <span class="chip">IA pour Tous — Force N</span>
+            <span class="chip">Communication — Force N</span>
+            <span class="chip">Front-end Dev — Force N</span>
+            <span class="chip">Inbound Marketing — HubSpot</span>
+            <span class="chip">Prise de parole en public — ESCOA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="section-inner">
+      <p class="eyebrow reveal">// contact</p>
+      <h2 class="section-title reveal">Discutons de votre prochain projet data</h2>
+      <p class="section-lead reveal">
+        Ouvert aux opportunités en Data Engineering, Data Analytics et
+        Business Intelligence — à Dakar ou à distance.
+      </p>
+
+      <div class="contact-grid reveal">
+        <a href="mailto:daoudaka418@gmail.com" class="contact-card">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">daoudaka418@gmail.com</span>
+        </a>
+        <a href="tel:+221774180104" class="contact-card">
+          <span class="contact-label">Téléphone</span>
+          <span class="contact-value">+221 77 418 01 04</span>
+        </a>
+        <a href="https://github.com/DaoudaKA" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/DaoudaKA</span>
+        </a>
+        <a href="https://linkedin.com/in/daouda-ka-967028255" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">https://www.linkedin.com/in/daouda-ka-967028255/</span>
+        </a>
+      </div>
+
+      <div class="location reveal">Gueule Tapée, Dakar — Sénégal</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Conçu &amp; développé par Daouda KA — <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
