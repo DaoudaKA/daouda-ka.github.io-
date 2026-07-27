@@ -97,7 +97,6 @@ if (prefersReducedMotion) {
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // léger décalage en cascade pour les éléments du même conteneur
         entry.target.classList.add('is-visible');
         io.unobserve(entry.target);
       }
@@ -117,7 +116,6 @@ const navLinks = document.querySelectorAll('.nav-link');
 function onScroll() {
   const scrollY = window.scrollY;
 
-  // état actif du lien de nav
   let currentId = '';
   sections.forEach(section => {
     const top = section.offsetTop - 120;

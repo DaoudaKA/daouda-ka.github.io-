@@ -75,7 +75,22 @@
         </dl>
       </div>
 
-      <div class="hero-visual reveal" aria-hidden="true">
+      <div class="hero-visual reveal">
+        <!-- carte "profil" — se présente comme un enregistrement de données -->
+        <div class="profile-card">
+          <div class="profile-photo-frame">
+            <img class="profile-photo" src="assets/img/profile.jpg" alt="Photo de Daouda KA"
+                 onerror="this.onerror=null;this.src='assets/img/profile-placeholder.svg';">
+          </div>
+          <div class="profile-meta">
+            <div class="row"><span class="key">name:</span><span class="val">Daouda KA</span></div>
+            <div class="row"><span class="key">role:</span><span class="val">data_engineer / analyst</span></div>
+            <div class="row"><span class="key">base:</span><span class="val">Dakar, SN</span></div>
+          </div>
+          <div class="profile-status"><span class="dot-live"></span>ouvert aux opportunités</div>
+        </div>
+        <div class="pipe-connector" aria-hidden="true"></div>
+
         <div class="terminal">
           <div class="terminal-bar">
             <span class="dot dot-red"></span>
@@ -136,6 +151,43 @@
             <li><span>Wolof</span><em>Courant</em></li>
             <li><span>Pular</span><em>Courant</em></li>
           </ul>
+
+          <!-- entreprises & sites réalisés -->
+          <div class="logo-strip">
+            <p class="logo-strip-label">// entreprises &amp; sites en production</p>
+            <div class="logo-row">
+              <a href="#experience" class="logo-card" title="ByFilling">
+                <img src="assets/logos/byfilling.png" alt="ByFilling"
+                     onerror="this.onerror=null;this.src='assets/logos/byfilling-placeholder.svg';">
+                <span class="logo-card-name">ByFilling</span>
+              </a>
+              <a href="#experience" class="logo-card" title="Jant Tech">
+                <img src="assets/logos/jant-tech.png" alt="Jant Tech"
+                     onerror="this.onerror=null;this.src='assets/logos/jant-tech-placeholder.svg';">
+                <span class="logo-card-name">Jant Tech</span>
+              </a>
+              <a href="https://arctelecom.sn" target="_blank" rel="noopener" class="logo-card" title="arctelecom.sn">
+                <img src="assets/logos/arctelecom.png" alt="Arctelecom"
+                     onerror="this.onerror=null;this.src='assets/logos/arctelecom-placeholder.svg';">
+                <span class="logo-card-name">arctelecom.sn</span>
+              </a>
+              <a href="https://hayo.sn" target="_blank" rel="noopener" class="logo-card" title="hayo.sn">
+                <img src="assets/logos/hayo.png" alt="Hayo"
+                     onerror="this.onerror=null;this.src='assets/logos/hayo-placeholder.svg';">
+                <span class="logo-card-name">hayo.sn</span>
+              </a>
+              <a href="https://vision2050.bocs.sn" target="_blank" rel="noopener" class="logo-card" title="vision2050.bocs.sn">
+                <img src="assets/logos/vision2050.png" alt="Vision 2050"
+                     onerror="this.onerror=null;this.src='assets/logos/vision2050-placeholder.svg';">
+                <span class="logo-card-name">vision2050.bocs.sn</span>
+              </a>
+              <a href="#skills" class="logo-card" title="UCAD">
+                <img src="assets/logos/ucad.png" alt="UCAD"
+                     onerror="this.onerror=null;this.src='assets/logos/ucad-placeholder.svg';">
+                <span class="logo-card-name">UCAD</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="stack-card reveal">
@@ -181,7 +233,7 @@
   </section>
 
   <!-- ============ EXPERIENCE ============ -->
-  <section class="section section-dark" id="experience">
+  <section class="section section-alt" id="experience">
     <div class="section-inner">
       <p class="eyebrow reveal">// expérience</p>
       <h2 class="section-title reveal">Parcours professionnel</h2>
@@ -191,7 +243,13 @@
         <div class="timeline-item reveal">
           <div class="timeline-date"><span>2025 — 2026</span></div>
           <div class="timeline-content">
-            <h3>Data &amp; Développement <em>· ByFilling, Dakar</em></h3>
+            <div class="timeline-heading">
+              <div class="timeline-logo">
+                <img src="assets/logos/byfilling.png" alt="ByFilling"
+                     onerror="this.onerror=null;this.src='assets/logos/byfilling-placeholder.svg';">
+              </div>
+              <h3>Data &amp; Développement <em>· ByFilling, Dakar</em></h3>
+            </div>
             <p class="timeline-role">Stagiaire — Avril 2025 à Mai 2026</p>
             <ul>
               <li>Conception et amélioration de pipelines ELT pour automatiser collecte, nettoyage et transformation des données.</li>
@@ -206,7 +264,13 @@
         <div class="timeline-item reveal">
           <div class="timeline-date"><span>2025</span></div>
           <div class="timeline-content">
-            <h3>Développeur Web <em>· Jant Tech</em></h3>
+            <div class="timeline-heading">
+              <div class="timeline-logo">
+                <img src="assets/logos/jant-tech.png" alt="Jant Tech"
+                     onerror="this.onerror=null;this.src='assets/logos/jant-tech-placeholder.svg';">
+              </div>
+              <h3>Développeur Web <em>· Jant Tech</em></h3>
+            </div>
             <p class="timeline-role">Février — Mars 2025</p>
             <ul>
               <li>Développement fullstack : fonctionnalités front-end (Angular) et back-end (PHP).</li>
@@ -219,7 +283,9 @@
         <div class="timeline-item reveal">
           <div class="timeline-date"><span>2022 — auj.</span></div>
           <div class="timeline-content">
-            <h3>Engagement associatif &amp; leadership</h3>
+            <div class="timeline-heading">
+              <h3>Engagement associatif &amp; leadership</h3>
+            </div>
             <ul>
               <li>Président de l'Amicale des Élèves et Étudiants de Khondio, depuis 2022.</li>
               <li>Secrétaire Général de la Fédération des Amicales de la commune de Darou Khoudoss (6 amicales), depuis 2022.</li>
@@ -366,7 +432,7 @@
   </section>
 
   <!-- ============ SKILLS ============ -->
-  <section class="section section-dark" id="skills">
+  <section class="section section-alt" id="skills">
     <div class="section-inner">
       <p class="eyebrow reveal">// compétences</p>
       <h2 class="section-title reveal">Boîte à outils</h2>
@@ -400,7 +466,7 @@
 
       <div class="edu-cert-grid">
         <div class="edu-block reveal">
-          <p class="stack-card-label">// formation</p>
+          <p class="stack-card-label on-light">// formation</p>
           <ul class="edu-list">
             <li><span>2025 — 2026</span>Master 2 Informatique, Business Intelligence — UCAD</li>
             <li><span>2024</span>Master 1 Systèmes d'Information Répartis — UCAD</li>
@@ -409,7 +475,7 @@
           </ul>
         </div>
         <div class="cert-block reveal">
-          <p class="stack-card-label">// certifications</p>
+          <p class="stack-card-label on-light">// certifications</p>
           <div class="chips">
             <span class="chip">Data Analysis — Force N</span>
             <span class="chip">IA pour Tous — Force N</span>
